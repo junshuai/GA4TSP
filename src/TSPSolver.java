@@ -7,7 +7,8 @@ public class TSPSolver {
         TSP tsp;
 
         if (args.length < 1) {
-            System.out.println("Please input the number of cities or the path name of a data file");
+            System.out.println("Please input the number of cities or the path name of a data file!");
+            return;
         }
 
         try {
