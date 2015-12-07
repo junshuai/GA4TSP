@@ -1,12 +1,12 @@
 # Project Directory
 
-classes/    - java compiled classes
-data/       - data files
-jar/        - jar files
-package.sh  - a shell script to compile and package project files into jar files
-res/        - directory for program to store result files
-scripts/    - some python scripts to draw a result file
-src/        - code source
+    classes/    - java compiled classes
+    data/       - data files
+    jar/        - jar files
+    package.sh  - a shell script to compile and package project files into jar files
+    res/        - directory for program to store result files
+    scripts/    - some python scripts to draw a result file
+    src/        - code source
 
 
 # How to run
