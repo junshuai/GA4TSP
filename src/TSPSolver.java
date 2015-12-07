@@ -5,10 +5,15 @@ import java.io.*;
 public class TSPSolver {
     public static void main(String[] args) throws FileNotFoundException {
         TSP tsp;
+        int numIter = 5000;
 
         if (args.length < 1) {
             System.out.println("Please input the number of cities or the path name of a data file!");
             return;
+        }
+
+        if (args.length >= 2) {
+            numIter = Integer.parseInt(args[1]);
         }
 
         try {
@@ -32,7 +37,7 @@ public class TSPSolver {
 
         long startTime = System.currentTimeMillis();
 
-        ArrayList<Double> results = ga.iterate(5000);
+        ArrayList<Double> results = ga.iterate(numIter);
 
         long endTime = System.currentTimeMillis();
         long totalTime = endTime - startTime;
@@ -54,6 +59,6 @@ public class TSPSolver {
         }
 
         System.out.println("The result have been saved in file res/last.res");
-        System.out.println("You can run \"python draw_route.py res/last.res\" to draw the result.");
+        System.out.println("You can run \"python scripts/draw_route.py res/last.res\" to draw the result.");
     }
 }
